@@ -10,22 +10,31 @@ header, footer, .wrapper {
   display: grid;
 }
 
-header {
+.header {
   grid-template-columns: 1fr 1fr;
   height: 30vh;
+  grid-gap: 10px;
 
   @include respond(phone) {
     grid-template-columns: 1fr;
   }
+
+  &__left {
+    background: coral;
+  }
+
+  &__right {
+    background: darkgoldenrod;
+  }
 }
 
 .wrapper {
-  grid-template-columns: 70% 30%;
+  grid-template-columns: 2fr 1fr;
   grid-auto-rows: minmax(30vh, auto);
   grid-gap: 20px;
 
   @include respond(phone) {
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 1fr 2fr;
   }
 
   &__content {
