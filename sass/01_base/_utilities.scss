@@ -1,0 +1,23 @@
+// ///////////////////////
+// @@ ++ UTILITIES
+// ///////////////////////
+// When is the !important rule actually useful and a good idea?
+// In my opinion, utility classes are a good use case.
+
+.u-text-center {
+  text-align: center !important;
+}
+
+.u-text-left {
+  text-align: left !important;
+}
+
+.u-text-right {
+  text-align: right !important;
+}
+
+u-text-center, u-text-left, u-text-right {
+  @include respond(phone) {
+    text-align: left !important;
+  }
+}
