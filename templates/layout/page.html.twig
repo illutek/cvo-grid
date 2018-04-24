@@ -1,5 +1,6 @@
 
-NAVIGATION
+{% include directory ~ '/templates/partials/shared/navigation.html.twig' %}
+
 <header class="header">
     <div class="header__left u-text-left">{{ page.headerleft }}</div>
     <div class="header__right u-text-right">{{ page.headerright }}</div>
@@ -10,8 +11,4 @@ NAVIGATION
     <div class="wrapper__sidebar">{{ page.sidebar }}</div>
 </section>
 
-<footer class="footer">
-    <div class="footer__left">{{ page.footerleft }}</div>
-    <div class="footer__midle u-text-center">{{ page.footermidle }}</div>
-    <div class="footer__right u-text-right">{{ page.footerright }}</div>
-</footer>
+{% include directory ~ '/templates/partials/shared/footer.html.twig' %}

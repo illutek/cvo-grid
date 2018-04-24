@@ -1,0 +1,20 @@
+{
+  "name": "cult",
+  "description": "Oefening op CSS Grid CVO",
+  "main": "gulpfile.babel.js",
+  "authors": [
+    "stefan"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/illutek/cvo-grid",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "css-reset": "^2.5.1"
+  }
+}
