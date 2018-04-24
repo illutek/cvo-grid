@@ -2,3 +2,12 @@
 // @@ FOOTER
 // ////////////////////////
 
+.footer {
+  grid-template-columns: repeat(3, 1fr);
+  background: black;
+  color: white;
+
+  @include respond(phone) {
+    grid-template-columns: 1fr;
+  }
+}

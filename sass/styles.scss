@@ -6,6 +6,8 @@
 @import "00_abstracts/abstracts-dir";
 @import "01_base/base-dir";
 
+@import "03_regions/footer";
+
 header, footer, .wrapper {
   display: grid;
 }
@@ -57,15 +59,4 @@ header, footer, .wrapper {
   }
 }
 
-
-
-footer {
-  grid-template-columns: repeat(3, 1fr);
-  background: black;
-  color: white;
-
-  @include respond(phone) {
-    grid-template-columns: 1fr;
-  }
-}
 

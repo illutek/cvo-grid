@@ -1,0 +1,19 @@
+name: cult
+type: theme
+description: 'Voor het toneel gezelschap het Kliekske'
+base theme: classy
+package: Custom
+core: 8.x
+version: 1.0.0
+libraries:
+  - cult/globalstyle
+  - cult/globaljs
+
+regions:
+  content: Content
+  headerleft: 'Header Left'
+  headerright: 'Header Right'
+  sidebar: Sidebar
+  footerleft: 'Footer Left'
+  footermidle: 'Footer Midle'
+  footerright: 'Footer Right'
