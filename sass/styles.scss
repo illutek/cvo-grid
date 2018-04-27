@@ -5,58 +5,9 @@
 
 @import "00_abstracts/abstracts-dir";
 @import "01_base/base-dir";
-
-@import "03_regions/footer";
+@import "02_layout/layout-dir";
+@import "03_regions/regions-dir";
 
 header, footer, .wrapper {
   display: grid;
 }
-
-.header {
-  grid-template-columns: 1fr 1fr;
-  height: 30vh;
-  grid-gap: 10px;
-
-  @include respond(phone) {
-    grid-template-columns: 1fr;
-  }
-
-  &__left {
-    background: coral;
-  }
-
-  &__right {
-    background: darkgoldenrod;
-  }
-}
-
-.wrapper {
-  grid-template-columns: 2fr 1fr;
-  grid-auto-rows: minmax(30vh, auto);
-  grid-gap: 20px;
-
-  @include respond(phone) {
-    grid-template-columns: 1fr 2fr;
-  }
-
-  &__content {
-    order: 1;
-    background: aquamarine;
-  }
-
-  &__sidebar {
-    order: 2;
-    background: cadetblue;
-  }
-  @include respond(phone) {
-    &__content {
-      order: 2;
-    }
-
-    &__sidebar {
-      order: 1;
-    }
-  }
-}
-
-

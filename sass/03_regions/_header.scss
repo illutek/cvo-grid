@@ -1,0 +1,21 @@
+// /////////////////////////
+// @@ HEADER
+// ////////////////////////
+
+.header {
+  grid-template-columns: 1fr 1fr;
+  height: 30vh;
+  grid-gap: 10px;
+
+  @include respond(phone) {
+    grid-template-columns: 1fr;
+  }
+
+  &__left {
+    background: coral;
+  }
+
+  &__right {
+    background: darkgoldenrod;
+  }
+}
