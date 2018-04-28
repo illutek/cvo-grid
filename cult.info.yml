@@ -9,6 +9,7 @@ libraries:
   - cult/globalstyle
 
 regions:
+  navigation: Navigation
   content: Content
   headerleft: 'Header Left'
   headerright: 'Header Right'

@@ -1,14 +1,13 @@
+{#
+/**
+ * page
+ */
+ #}
 
 {% include directory ~ '/templates/partials/shared/navigation.html.twig' %}
 
-<header class="header">
-    <div class="header__left u-text-left">{{ page.headerleft }}</div>
-    <div class="header__right u-text-right">{{ page.headerright }}</div>
-</header>
+{% include directory ~ '/templates/partials/header.html.twig' %}
 
-<section class="main">
-    <div class="main__content">{{ page.content }}</div>
-    <div class="main__sidebar">{{ page.sidebar }}</div>
-</section>
+{% include directory ~ '/templates/partials/pages/page-main.html.twig' %}
 
 {% include directory ~ '/templates/partials/shared/footer.html.twig' %}

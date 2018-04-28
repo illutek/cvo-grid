@@ -1,0 +1,36 @@
+{#
+/**
+ * 
+ */
+ #}
+ 
+{% 
+  set classes = [
+      'main',
+      page.sidebar? 'main--sidebar',
+      page.sidebar is empty? 'main--no-sidebar'
+  ]
+%}
+
+<section{{ content_attributes.addClass(classes)}}>
+
+  {{ page.breadcrumb }}
+
+  {{ page.highlighted }}
+
+  {{ page.help }}
+ 
+
+{# Content #}
+    <div class="main__content">
+        {{ page.content }}
+    </div>
+  
+{# Sidebar #}
+    {% if page.sidebar %}
+        {% block sidebar %}
+            <div class="main__sidebar">{{ page.sidebar }}</div>
+        {% endblock %}
+    {% endif %}
+
+</section>
